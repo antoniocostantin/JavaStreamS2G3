@@ -11,6 +11,7 @@ public class Product {
     private  String category;
     Random rand  = new Random();
     Faker faker = new Faker();
+    String[] categories = new String[]{"book", "cd", "vinile", "giradischi", "baby", "boys"};
 
     public Product(String name, Double price, String category) {
         this.name = name;
@@ -21,9 +22,9 @@ public class Product {
 
     public Product(){
         this.id = rand.nextLong(10000, 9999999);
-        this.price = (double) Math.round(rand.nextDouble(1, 100) * 100.0) / 100.0;
+        this.price = (double) Math.round(rand.nextDouble(1, 1000) * 100.0) / 100.0;
         this.name = faker.book().title();
-        this.category = "book";
+        this.category = categories[rand.nextInt(categories.length)];
     }
 
     // getter

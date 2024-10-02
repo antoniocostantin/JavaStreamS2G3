@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d5c768-0c81-4b6b-ab48-a304ecb648f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaStreamS2G3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Orders/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Orders/Products/Product.java" afterDir="false" />
+    <list default="true" id="83d5c768-0c81-4b6b-ab48-a304ecb648f8" name="Changes" comment="inith">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orders/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orders/Products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orders/Products/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "antoniocostantin"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/antoniocostantin/JavaStreamS2G3.git",
+    "accountId": "724261c1-ee15-4109-96e6-1dfc7da89fd4"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 8
 }]]></component>
@@ -77,11 +83,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727870338745</updated>
-      <workItem from="1727870341181" duration="5955000" />
+      <workItem from="1727870341181" duration="17674000" />
     </task>
+    <task id="LOCAL-00001" summary="inith">
+      <option name="closed" value="true" />
+      <created>1727877411490</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727877411490</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inith" />
+    <option name="LAST_COMMIT_MESSAGE" value="inith" />
   </component>
 </project>

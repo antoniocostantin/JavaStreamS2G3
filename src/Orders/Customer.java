@@ -11,7 +11,7 @@ public class Customer {
     public Customer(String name) {
         this.name = name;
         this.id = rand.nextLong(10000, 9999999);
-        this.tier = rand.nextInt(5);
+        this.tier = rand.nextInt(4) + 1;
     }
 
     public Customer(String name, int tier) {
