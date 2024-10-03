@@ -15,15 +15,28 @@ public class Main {
         System.out.println("---------------> LISTA ORDINI <--------------");
         Faker faker = new Faker(Locale.ITALY);
         Random rand = new Random();
-        List<Order> orders = new ArrayList<Order>();
-        for (int i = 0; i < 50; i++) {
+        List<Order> orders = new ArrayList<>();
+        List<Customer> customers = new ArrayList<>();
+        List<Product> products = new LinkedList<>();
+
+        for (int i = 0; i < 10; i++) {
             Customer cust = new Customer(faker.name().firstName());
-            List<Product> products = new LinkedList<Product>();
-            for (int j = 0; j < rand.nextInt(4) + 1; j++) {
-                Product p = new Product();
-                products.add(p);
+            customers.add(cust);
+        }
+
+        for (int j = 0; j < 100 + 1; j++) {
+            Product p = new Product();
+            products.add(p);
+        }
+
+        for (int i = 0; i < 50; i++) {
+
+            List<Product> randomProducts = new LinkedList<>();
+            for(int j = 0; j < 6; j++) {
+                Product p = products.get(rand.nextInt(products.size()));
+                randomProducts.add(p);
             }
-            Order ord = new Order(cust, products);
+            Order ord = new Order(customers.get(rand.nextInt(customers.size())), randomProducts);
             orders.add(ord);
         }
         orders.forEach(System.out::println);
@@ -71,7 +84,7 @@ public class Main {
             ord.setOrderDate(LocalDate.of(2021,2,1).plusDays(rand.nextInt(56)));
         }
         List<Order> filtOrd = new ArrayList<>();
-        List<Customer> tierTwoCust = new ArrayList<>();
+
         orders.stream().filter(ord -> ord.getOrderDate().isAfter(LocalDate.of(2021,2,1)) && ord.getOrderDate().isBefore(LocalDate.of(2021,4,1))).forEach(filtOrd::add);
         filtOrd.stream().filter(order -> order.getCustomer().getTier() == 2).forEach(System.out::println);
     }
